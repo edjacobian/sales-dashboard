@@ -1,25 +1,19 @@
+import React from 'react';
 import Grid from "@mui/material/Grid";
 import './App.css'
 
 function App() {
   return (
-  <>
-    <Grid container spacing={2}>
-      <Grid xs={8}>
-      <Item>xs=8</Item>
-    </Grid>
-    <Grid xs={4}>
-      <Item>xs=4</Item>
-    </Grid>
-    <Grid xs={4}>
-      <Item>xs=4</Item>
-    </Grid>
-    <Grid xs={8}>
-      <Item>xs=8</Item>
-    </Grid>
-    </Grid>
-  </>
-  )
+      <>
+        <Grid container spacing={2}
+        <Grid item xs={2} className="stretched-box">
+          <div>Stretched Box</div>
+        </Grid>
+        <Grid item xs={10}>
+          <div>Remaining Content</div>
+        </Grid>
+      </>
+  );
 };
 
-export default App
+export default App;
